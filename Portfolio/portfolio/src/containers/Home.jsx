@@ -42,6 +42,13 @@ const Home = () => {
               ))}
             </AnimatePresence>
           </div>
+
+          {/* hire me */}
+          <a href="#"
+           style={{ boxShadow: "inset 0px 0px 10px rgba(255,255,255,0.3)" }}
+           className="mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary">
+            <p className="text-texlight group-hover:text-transparent bg-clip-text group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-secondary">Hire Me</p>
+          </a>
         </div>
 
         {/* Hero image */}
