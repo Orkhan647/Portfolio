@@ -1,9 +1,18 @@
-
+import { Header, Home } from "./";
 
 const App = () => {
   return (
-    <div className="flex item-center justify-center">
-      <h1 className="text-blue-500">Hi there</h1>
+    <div className="w-full xl:w-[1200px] p-32 px-4 lg:px-12 pr-4 lg:pr-32">
+      {/* particles container */}
+      {/* header */}
+      <Header />
+      {/* home container  */}
+      <Home/>
+      {/* about container  */}
+      {/* skills container */}
+      {/* projexts container */}
+      {/* contact container */}
+      {/* footer container */}
     </div>
   );
 };
