@@ -1,4 +1,4 @@
-import { About, Header, Home, Projects, ServiceCount, Skills } from "./";
+import { About, Contact, Header, Home, Projects, ServiceCount, Skills } from "./";
 
 const App = () => {
   return (
@@ -17,6 +17,7 @@ const App = () => {
       {/* projexts container */}
       <Projects/>
       {/* contact container */}
+      <Contact/>
       {/* footer container */}
     </div>
   );

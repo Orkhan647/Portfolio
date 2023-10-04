@@ -53,12 +53,13 @@ const Skills = () => {
     </div>
      {/* image section */}
      <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
-     <SkillCard skill={"HTML 5"} percentage={"100%"} color={"#FF3F3F"} move={true}/>
-     <SkillCard skill={"CSS 3"} percentage={"100%"} color={"#008FFF"}/>
-     <SkillCard skill={"JavaScript"} percentage={"70%"} color={"#FFB900"} move={true}/>
-     <SkillCard skill={"Node Js"} percentage={"60%"} color={"#14D800"}/>
-     <SkillCard skill={"React & NextJs"} percentage={"75%"} color={"#00FFF3"} move={true}/>
-     <SkillCard skill={"Mongo DB & Firebase"} percentage={"50%"} color={"#FFF400"}/>
+     <SkillCard skill={"HTML 5"} percentage={"100%"} color={"#FF3F3F"} move={true} />
+<SkillCard skill={"CSS 3"} percentage={"100%"} color={"#008FFF"} move={false} />
+<SkillCard skill={"JavaScript"} percentage={"70%"} color={"#FFB900"} move={true} />
+<SkillCard skill={"Node Js"} percentage={"60%"} color={"#14D800"} move={false} />
+<SkillCard skill={"React & NextJs"} percentage={"75%"} color={"#00FFF3"} move={true} />
+<SkillCard skill={"Mongo DB & Firebase"} percentage={"50%"} color={"#FFF400"} move={false} />
+
     </div>
   </div>
 </section>

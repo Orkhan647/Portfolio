@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Leaf1, Leaf2 } from "../assets";
 import { ProjectsData } from "../utils/helper";
 import PropTypes from "prop-types";
-import { FaGithub } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 
 const Projects = () => {
@@ -53,6 +53,7 @@ const ProjectCard = ({ project }) => {
         whileHover={{ scale: 1.1 }}
         className="w-full h-full object-contain rounded-lg"
         src={project.imgSrc}
+        alt={project.name}
       />
       {isHovered && (
         <motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0,0,0,0.6)] flex items-center justify-center flex-col gap-2">
@@ -73,17 +74,6 @@ ProjectCard.propTypes = {
     name: PropTypes.string.isRequired,
     gitURL: PropTypes.string.isRequired,
   }).isRequired,
-};
-
-Projects.propTypes = {
-  project: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      imgSrc: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      gitURL: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export default Projects;
