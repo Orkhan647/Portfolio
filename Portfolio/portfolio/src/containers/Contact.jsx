@@ -1,46 +1,101 @@
 import { useState } from "react";
 import { Leaf1, Leaf2 } from "../assets";
-import { motion } from "framer-motion";
-import {addDoc, collection } from "firebase/firestore"
-import { db } from "../config/firebase.config"
-import { Alert } from "./";
+import { AnimatePresence, motion } from "framer-motion";
+import { addDoc, collection } from "firebase/firestore";
+import { db } from "../config/firebase.config";
+import Alert from "./Alert"; // Import your Alert component
 
 const Contact = () => {
-  const[data,setData] = useState({
+  const [data, setData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    message: ""
-  })
+    message: "",
+  });
 
+  const [alert, setAlert] = useState({
+    isAlert: false,
+    message: "",
+    status: null,
+  });
+  const handleTextChange = (e) => {
+    const { name, value } = e.target;
 
-  const handleTextChange = (e) =>{
-const  {name, value }= e.target;
+    // update the state for the corresponding input values
+    setData((prevData) => ({ ...prevData, [name]: value }));
+  };
 
-// update the state for the corresponding  input values
-setData((prevData) => ({...prevData, [name] : value}))
-  }
+  const sendMessage = async () => {
+    if (data.email.trim() === "") {
+      // Email field is empty, show a danger alert
+      setAlert({
+        isAlert: true,
+        message: "Required Fields cannot be empty",
+        status: "danger",
+      });
 
+      setTimeout(() => {
+        setAlert({
+          isAlert: false,
+          message: "",
+          status: null,
+        });
+      }, 4000);
+    } else {
+      await addDoc(collection(db, "messages"), { ...data })
+        .then(() => {
+          // Message sent successfully, show a success alert (optional)
+          setData({ firstName: "", lastName: "", email: "", message: "" });
+          setAlert({
+            isAlert: true,
+            message: "Thanks for contacting me",
+            status: "success",
+          });
 
-  const sendMessage = async () =>{
-    if(data.email === "" || data.email === null){
-      ///throw an alert
-    }else{
-      await addDoc(collection(db, "messages"), {...data}).then(()=>{
-        //throw that alert message
-      }).catch(err=>{
-        //throw that alert
-        console.error(err)
-      })
+          setTimeout(() => {
+            setAlert({
+              isAlert: false,
+              message: "",
+              status: null,
+            });
+          }, 4000);
+
+          // Reset the form or clear the data state (optional)
+          setData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            message: "",
+          });
+        })
+        .catch((err) => {
+          // An error occurred while sending the message, show a danger alert (optional)
+          setAlert({
+            isAlert: true,
+            message: `Error ${err.message}`,
+            status: "danger",
+          });
+
+          setTimeout(() => {
+            setAlert({
+              isAlert: false,
+              message: "",
+              status: null,
+            });
+          }, 4000);
+        });
     }
-  }
+  };
+
   return (
     <section
       id="contact"
       className="flex items-center justify-center flex-col gap-8 lg:gap-12 my-12"
     >
-      {/* Toast  Alert notification */}
-      <Alert/>
+      {/* Toast Alert notification */}
+      <AnimatePresence>
+        {alert.isAlert && <Alert status={alert.status} message={alert.message} />}
+      </AnimatePresence>
       {/* title */}
       <div className="w-full flex items-center justify-center py-24">
         <motion.div
@@ -100,8 +155,10 @@ setData((prevData) => ({...prevData, [name] : value}))
           ></textarea>
 
           <div className="w-full flex items-center justify-center lg:justify-end">
-            <button className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary "
-            onClick={sendMessage}>
+            <button
+              className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary "
+              onClick={sendMessage}
+            >
               Send
             </button>
           </div>
