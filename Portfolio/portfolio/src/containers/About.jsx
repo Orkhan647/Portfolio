@@ -27,8 +27,8 @@ const About = () => {
       {/* main content */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full">
         {/* image section */}
-        <div className="w-full flex items-center justify-center px-8">
-          <div className="w-full lg:w-96  p-[2px] rounded-md bg-gradient-to-br from-primary to-secondary relative">
+        <div className="w-full flex  justify-center px-8">
+          <div className="w-full h-fit lg:w-96  p-[2px] rounded-md bg-gradient-to-br from-primary to-secondary relative">
             <img
               src={about}
               className="w-full rounded-md h-auto object-contain"
@@ -39,27 +39,48 @@ const About = () => {
           </div>
         </div>
 
-        {/* content section */}
-        <div className="w-full px-8 flex flex-col gap-4 items-start justify-start ">
-          <p className="text-texlight text-base tracking-wide  text-justify ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            possimus dignissimos nulla, magnam numquam omnis vero. A cum
-            voluptatem tempore sit, nulla ullam delectus in. Veritatis labore
-            quidem omnis eligendi!
-          </p>
-          <p className="text-texlight text-base tracking-wide  text-justify ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            possimus dignissimos nulla, magnam numquam omnis vero. A cum
-            voluptatem tempore sit, nulla ullam delectus in. Veritatis labore
-            quidem omnis eligendi!
-          </p>
-          <p className="text-texlight text-base tracking-wide  text-justify ">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
-            possimus dignissimos nulla, magnam numquam omnis vero. A cum
-            voluptatem tempore sit, nulla ullam delectus in. Veritatis labore
-            quidem omnis eligendi!
-          </p>
-        </div>
+       {/* content section */}
+<div className="w-full px-8 flex flex-col gap-4 items-start justify-start ">
+  <p className="text-texlight text-base tracking-wide text-justify ">
+    Hello, I&apos;m Orxan Kerimov. I was born in the beautiful lands of
+    Azerbaijan in 1995. My interest in computers and technology has
+    influenced me since my childhood. However, I&apos;ve only recently
+    discovered my curiosity for programming and have just embarked on
+    this journey.
+  </p>
+  <p className="text-texlight text-base tracking-wide text-justify ">
+    In the world of software, I am aware that there are many successful
+    developers, and I am enthusiastic about improving myself in this
+    field. At the moment, coding is a new adventure for me. I am
+    learning to communicate with computers, create programs, and solve
+    problems.
+  </p>
+  <p className="text-texlight text-base tracking-wide text-justify ">
+    The projects and experiences of other developers that I see on
+    social media platforms motivate me. I learn something new every day,
+    and it propels me forward on the path to becoming a better
+    programmer.
+  </p>
+  <p className="text-texlight text-base tracking-wide text-justify ">
+    Initially, I may be far from tackling big projects in the software
+    world, but I am determined to develop myself and progress at every
+    step. I carry the dream of contributing to technology and creating
+    my own projects. In the future, I hope to be more involved in the
+    software world and develop new projects.
+  </p>
+  <p className="text-texlight text-base tracking-wide text-justify ">
+    As someone who is just starting out in programming, I wanted to
+    convey how exciting this journey is for me. Remember that everyone
+    has to start somewhere and keep on learning! As for who I am, I&apos;m a
+    curious individual eager to explore the vast world of programming
+    and technology. My passion for learning and my determination to grow
+    in this field drive me to take on new challenges and continuously
+    expand my knowledge. I believe that the future holds endless
+    possibilities for those who are willing to learn and innovate, and
+    I&apos;m excited to be a part of that journey.
+  </p>
+</div>
+
       </div>
     </section>
   );

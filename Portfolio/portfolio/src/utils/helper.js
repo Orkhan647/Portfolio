@@ -4,10 +4,11 @@ import {
   FaFacebookF,
   FaGithub,
   FaHouse,
+  FaInstagram,
   FaLinkedinIn,
   FaRenren,
   FaUser,
-  FaYoutube,
+ 
 } from "react-icons/fa6";
 import {
   ChatApp,
@@ -25,25 +26,25 @@ export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
-    uri: "",
+    uri: "https://www.facebook.com/okuw99/",
     color: "#1877F2",
   },
   {
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
-    uri: "",
+    uri: "https://www.linkedin.com/in/orkhan-karimov-bb676226b/",
     color: "#0072b1",
   },
   {
     id: `github-${Date.now()}`,
     Icon: FaGithub,
-    uri: "",
+    uri: "https://github.com/Orkhan647",
     color: "#fff",
   },
   {
-    id: `youtube-${Date.now()}`,
-    Icon: FaYoutube,
-    uri: "",
+    id: `instagram-${Date.now()}`,
+    Icon: FaInstagram,
+    uri: "https://www.instagram.com/orxan_keriimov/",
     color: "#ff0000",
   },
 ];
