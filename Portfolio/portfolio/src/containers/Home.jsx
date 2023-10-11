@@ -24,7 +24,7 @@ const Home = () => {
             And I&apos;m{"  "}
             <HeroTypeWritter
               speed={100}
-              words={["a Developer...", " a Freelancer.."]}
+              words={["a Developer...", " Looking For Job.."]}
             />
           </h2>
           <p className="text-base text-texlight mt-6 text-center lg:text-left">

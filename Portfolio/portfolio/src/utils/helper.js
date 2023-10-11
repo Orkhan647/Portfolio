@@ -10,6 +10,7 @@ import {
   FaUser,
  
 } from "react-icons/fa6";
+
 import {
   ChatApp,
   CodePenClone,
@@ -79,62 +80,38 @@ export const Menus = [
     Icon: FaEnvelope,
     uri: "#contact",
     name: "Contact",
-  },
+  }
 ];
 
 export const ProjectsData = [
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
+    name: "Transit Flow",
     imgSrc: RestaurantClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://loges.netlify.app",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
+    name: "Nexcent",
     imgSrc: CodePenClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://github.com/Orkhan647/Nextcent-site",
   },
   {
     id: `openai-${Date.now()}`,
-    name: "OpenAI",
+    name: "Movie App (with next.js)",
     imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://github.com/Orkhan647/MovieApp",
   },
   {
     id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
+    name: "Portfolio",
     imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://github.com/Orkhan647/Portfolio",
   },
   {
     id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
+    name: "MegaTechnique (html-css)",
     imgSrc: ImageSharing,
     gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `portfoliofirebase-${Date.now()}`,
-    name: "Portfolio UI Fireabse",
-    imgSrc: PortfolioFirebase,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+  }
 ];
