@@ -1,0 +1,48 @@
+{
+    "en": {
+      "translation": {
+        "about": "About",
+        "skills": "Skills",
+        "project": "Projects",
+        "contact": "Contact Me",
+        "hello": "Hello, It's me ",
+        "name": "Karimli Aghabala",
+        "i": "And I'am",
+        "dev": "a Web Developer...",
+        "fre": "looking for a job",
+        "info1": "I was born on 03.03.1993 in the village of Parvanli, Zardab region. In 2011, having scored 439 points, I was admitted to the Geography teaching specialty of the Azerbaijan State Pedagogical University...",
+        "infoAbout1": "I was born on 03.03.1993 in the village of Parvanli, Zardab region. In 2011, having scored 439 points, I was admitted to the Geography teaching specialty of the Azerbaijan State Pedagogical University (free of charge). In 2015, I took an academic leave and went to the Military Service. In 2017, I graduated from the university and scored 44 points in the MIG exam. Currently, I am an employee of that enterprise according to my employment contract.",
+        "infoAbout2": "In addition, I worked at the Karalar village secondary school named after A. Allahverdiyev of the same region with a 3-year contract. Also, UTIS, STUDENT-GRADUATE, e-gov etc. of both schools. I am a systems coordinator. I have already changed my field of work to IT. In 2011, I completed a 6-month course on Office programs and Adobe Photoshop programs at the TB Bilgi educational center. Certificate issued. I have attended many online courses in the field of education. STEAM, UTIS, etc",
+        "bt": "My skills and experience",
+        "infoSkills1": "I participated in 3 courses. 1 is face-to-face and 2 is online. 1. I finished the SQL programmer course organized by the Ministry of Education and passed the certification exam (92/100 points). 2. I participated in online trainings on WEB programming (HTML, CSS, JAVA SCRIPT) organized by the Ministry of Youth and Sports. I passed the certification exam.",
+        "infoSkills2": "3. I graduated from the Web developer course organized by the Ministry of Education, Ministry of Economy and IT-Academy. Currently, I am studying for 2 days in the course organized by the State Employment Agency, and we are doing 3 days of practice. Training and practice takes place at Jed Academy",
+        "fName": "First Name",
+        "lName": "Last Name",
+        "eMail": "E-Post",
+        "mesagge": "Mesagge here...",
+        "send": "Send",
+        "warningMesagge": "Required fields cannot be empyt",
+        "grMesagge": "Thanks for contacting me",
+        "hapS": "Happy Students",
+        "hapC": "Happy Customers",
+        "fsProject": "Full-Stack Projects",
+        "pProject": "Public Projects",
+        "year": "2022 (June-August)",
+        "edu": "Ministry of Education and Vocational Education Center",
+        "specialty": "SQL programmer",
+        "year2": "2022 (July-October)",
+        "edu2": "Ministry of Youth and Sports and CODE Factory",
+        "specialty2": "WEB developer",
+        "year3": "2022/Sept-2023/Jan",
+        "edu3": "IT Academy and Algorithmics",
+        "specialty3": "FRONT-END developer",
+        "year4": "2023/Aug-2024/Jan( Continue...)",
+        "edu4": "JED Academy",
+        "specialty4": "FRONT-END developer",
+        "certficate": "See the certificate",
+        "hCertf": "Certficates and Courses",
+        "cv": "Upload your CV"
+      }
+    }
+  }
+  
