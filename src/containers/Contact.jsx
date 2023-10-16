@@ -4,8 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../config/firebase.config";
 import Alert from "./Alert"; // Import your Alert component
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const {t} = useTranslation()
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
@@ -107,7 +109,7 @@ const Contact = () => {
         >
           <img src={Leaf1} className="w-6 h-auto object-contain" alt="" />
           <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-            Contact Me
+            {t('contact')}
           </p>
           <img src={Leaf2} className="w-6 h-auto object-contain" alt="" />
         </motion.div>
@@ -121,7 +123,7 @@ const Contact = () => {
               name="firstName"
               value={data.firstName}
               onChange={handleTextChange}
-              placeholder="First Name"
+              placeholder={t('fName')}
               className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white"
             />
 
@@ -130,7 +132,7 @@ const Contact = () => {
               name="lastName"
               value={data.lastName}
               onChange={handleTextChange}
-              placeholder="Last Name"
+              placeholder={t('lName')}
               className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white"
             />
           </div>
@@ -140,7 +142,7 @@ const Contact = () => {
             name="email"
             value={data.email}
             onChange={handleTextChange}
-            placeholder="Email"
+            placeholder={t('eMail')}
             className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white"
           />
           <textarea
@@ -150,7 +152,7 @@ const Contact = () => {
             id=""
             cols="0"
             rows="10"
-            placeholder="Message here..."
+            placeholder={t('mesagge')}
             className="w-full px-4 py-3 rounded-md border border-[rgba(255,255,255,0.3)] bg-transparent focus:border-primary outline-none text-white"
           ></textarea>
 
@@ -159,7 +161,7 @@ const Contact = () => {
               className="px-12 py-3 bg-gradient-to-br from-primary to-secondary rounded-md w-full lg:w-auto hover:bg-gradient-to-br hover:from-black hover:to-black hover:border hover:border-primary hover:text-primary "
               onClick={sendMessage}
             >
-              Send
+              {t('send')}
             </button>
           </div>
         </div>

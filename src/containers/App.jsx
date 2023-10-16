@@ -11,8 +11,10 @@ import {
 } from "./";
 import { HomeSocialLinks } from "../components";
 import { Socials } from "../utils/helper";
+import { useTranslation } from "react-i18next";
 
 const App = () => {
+  const {t}= useTranslation()
   return (
     <div className="w-full xl:w-[1200px] p-30 px-4 lg:px-12 pr-4 lg:pr-32">
       {/* particles container */}
@@ -33,7 +35,7 @@ const App = () => {
       <Contact />
       {/* footer container */}
       <div className="w-full flex flex-col items-center justify-start mt-32 mb-12">
-        <p className="text-3xl tracking-wide text-texlight">Karimov Orkhan</p>
+        <p className="text-3xl tracking-wide text-texlight">{t('name')}</p>
         <div className="flex items-center justify-center gap-16 mt-16">
           <AnimatePresence>
             {Socials &&

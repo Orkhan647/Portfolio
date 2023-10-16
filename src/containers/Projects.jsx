@@ -4,8 +4,10 @@ import { ProjectsData } from "../utils/helper";
 import PropTypes from "prop-types";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const {t} = useTranslation()
   return (
     <section
       id="projects"
@@ -22,7 +24,7 @@ const Projects = () => {
         >
           <img src={Leaf1} className="w-6 h-auto object-contain" alt="" />
           <p className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-            Projects
+            {t('project')}
           </p>
           <img src={Leaf2} className="w-6 h-auto object-contain" alt="" />
         </motion.div>

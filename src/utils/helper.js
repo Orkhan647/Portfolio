@@ -8,19 +8,14 @@ import {
   FaLinkedinIn,
   FaRenren,
   FaUser,
- 
 } from "react-icons/fa6";
 
 import {
   ChatApp,
   CodePenClone,
-  FreshJuiceUI,
   ImageSharing,
   OpenAI,
-  PixabayClone,
-  PortfolioFirebase,
   RestaurantClone,
-  SocialMedia,
 } from "../assets";
 
 export const Socials = [
@@ -51,6 +46,7 @@ export const Socials = [
 ];
 
 export const Menus = [
+  
   {
     id: `home-${Date.now()}`,
     Icon: FaHouse,
@@ -80,7 +76,7 @@ export const Menus = [
     Icon: FaEnvelope,
     uri: "#contact",
     name: "Contact",
-  }
+  },
 ];
 
 export const ProjectsData = [
@@ -113,5 +109,5 @@ export const ProjectsData = [
     name: "MegaTechnique (html-css)",
     imgSrc: ImageSharing,
     gitURL: "https://github.com/Vetrivel-VP",
-  }
+  },
 ];
