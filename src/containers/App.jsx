@@ -6,12 +6,13 @@ import {
   Home,
   ParticlesContainer,
   Projects,
-  ServiceCount,
+
   Skills,
 } from "./";
 import { HomeSocialLinks } from "../components";
 import { Socials } from "../utils/helper";
 import { useTranslation } from "react-i18next";
+
 
 const App = () => {
   const { t } = useTranslation();
@@ -24,15 +25,7 @@ const App = () => {
       <Header />
       {/* home container  */}
       <Home />
-      {/* Services count cards */}
-      <div
-        className="w-full"
-        data-aos="fade-up"
-        data-aos-easing=" ease-out-cubic"
-        data-aos-duration="500"
-      >
-        <ServiceCount />
-      </div>
+
       {/* about container  */}
       <div
         className="w-full"
