@@ -42,7 +42,7 @@ const Home = ({setSiteLang}) => {
             {t('info1')}
           </p>
           {/* social media links */}
-          <div className="flex items-center justify-center gap-10 mt-16">
+          <div className="flex items-center justify-center gap-8 mt-16">
             <AnimatePresence>
               {Socials &&
                 Socials.map((item, index) => (
