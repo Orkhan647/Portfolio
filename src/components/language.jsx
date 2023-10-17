@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { useState } from "react";
+
 
 const translationAz = {
   about: "Haqqımda",
@@ -211,7 +211,7 @@ i18n.use(initReactI18next).init({
   },
 });
 
-const Language = ({ setSiteLang }) => {
+const Language = () => {
   const [selectedLang, setSelectedLang] = React.useState("az");
 
   const onClick = (e) => {
@@ -232,7 +232,7 @@ const Language = ({ setSiteLang }) => {
 
   return (
     <Suspense fallback="Loading...">
-      <form className="flex items-center justify-center gap-7 rounded-xl backdrop-blur-md border border-[rgba(255,255,255,0.3)] p-3">
+      <form className="flex items-center justify-center gap-5 rounded-xl backdrop-blur-md border border-[rgba(255,255,255,0.3)] p-3">
         <button
           onClick={onClick}
           className="text-white group hover:text-primary relative"

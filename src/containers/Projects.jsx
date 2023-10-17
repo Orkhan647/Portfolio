@@ -72,6 +72,7 @@ const ProjectCard = ({ project }) => {
 ProjectCard.propTypes = {
   project: PropTypes.shape({
     id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     imgSrc: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     gitURL: PropTypes.string.isRequired,

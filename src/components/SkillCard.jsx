@@ -39,8 +39,9 @@ const SkillCard = ({ skill, percentage, color,move }) => {
 
 SkillCard.propTypes = {
   skill: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,  
   color: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,  
+  percentage: PropTypes.string.isRequired,  
   move: PropTypes.bool.isRequired, 
 };
 
