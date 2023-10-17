@@ -79,7 +79,7 @@ const App = () => {
         >
           {t("name")}{" "}
         </p>
-        <div className="flex items-center justify-center gap-16 mt-16">
+        <div className="flex items-center justify-center gap-8 mt-16">
           <AnimatePresence>
             {Socials &&
               Socials.map((item, index) => (
