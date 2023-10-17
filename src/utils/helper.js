@@ -103,7 +103,7 @@ export const ProjectsData = [
     id: `openai-${Date.now()}`,
     name: "Movie App (with next.js)",
     imgSrc: OpenAI,
-    gitURL: "https://github.com/Orkhan647/MovieApp",
+    gitURL: "https://next-movie-theta.vercel.app/",
     target: "_blank"
   },
   {
