@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 import Language from '../components/language';
 
 
-const Home = () => {
+const Home = ({setSiteLang}) => {
   const {t}= useTranslation()
 
   return (
@@ -19,7 +19,7 @@ const Home = () => {
      
       <div className="mt-4 flex items-center justify-center">
   <div className="w-40 md:w-auto">
-    <Language />
+    <Language setSiteLang={setSiteLang} />
   </div>
 </div>
 

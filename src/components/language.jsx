@@ -200,7 +200,8 @@ i18n.use(initReactI18next).init({
   },
 });
 
-const Language = () => {
+const Language = ({setSiteLang}) => {
+
     const [selectedLang, setSelectedLang] = React.useState('az');
 
     const onClick = (e) => {
@@ -223,6 +224,7 @@ const Language = () => {
         <Suspense fallback="Loading...">
             <form className="flex items-center justify-center gap-7 rounded-xl backdrop-blur-md border border-[rgba(255,255,255,0.3)] p-3">
                 <button
+                
                     onClick={onClick}
                     className="text-white group hover:text-primary relative"
                     type="submit"
@@ -239,6 +241,7 @@ const Language = () => {
                     type="submit"
                     value="en"
                 >
+
                     {selectedLang === 'en' && (
                         <span className="rounded-full p-1 border border-primary">{languageName}</span>
                     )}
