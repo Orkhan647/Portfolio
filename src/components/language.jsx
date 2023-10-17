@@ -30,7 +30,8 @@ const translationAz = {
     "Karyeram boyunca bir sıra vacib bacarıqlar inkişaf etdirdim və müxtəlif iş təcrübələri qazandım. Bu səyahət zamanı əldə etdiyim bilik və bacarıqların xülasəsi: HTML 5: HTML 5-də 100% bacarıq səviyyəsim var. Veb inkişaf proseslərində HTML 5-dən səmərəli istifadə edə bilirəm. CSS 3: CSS 3-də bacarıqlarım 100% səviyyəsindədir. CSS 3 istifadə edərək veb dizaynda estetik və istifadəçi dostu interfeyslər yarada bilirəm.",
   infoSkills2:
     "JavaScript: JavaScript-də 70% bacarıq səviyyəm var. Bu dillərlə interaktiv veb proqramların hazırlanmasında təcrübəm var. Node.js: Mənim Node.js bacarıqlarım 60% səviyyəsindədir. Node.js-dən server tərəfində inkişaf və proqram inkişaf proseslərində istifadə edə bilərəm. React & Next.js: React və Next.js-də bacarığım 75%-dir. Müasir veb proqramlar yaratmaq üçün bu texnologiyalardan səmərəli istifadə edə bilirəm.",
-    infoSkills3:"MongoDB və Firebase: MongoDB və Firebase-dəki bacarıqlarım 50% səviyyəsindədir. Verilənlər bazası idarəçiliyi və bulud əsaslı proqramlar haqqında biliklərimlə layihələrə effektiv töhfə verə bilərəm. Bu mənim karyeram və bacarıqlarımın qısa xülasəsidir. Yaradıcı layihələr üzərində işləməyi və yeni bacarıqlar əldə etməyi səbirsizliklə gözləyirəm. Əlavə sualınız və ya iş təklifiniz varsa, mənimlə əlaqə saxlayın!",
+  infoSkills3:
+    "MongoDB və Firebase: MongoDB və Firebase-dəki bacarıqlarım 50% səviyyəsindədir. Verilənlər bazası idarəçiliyi və bulud əsaslı proqramlar haqqında biliklərimlə layihələrə effektiv töhfə verə bilərəm. Bu mənim karyeram və bacarıqlarımın qısa xülasəsidir. Yaradıcı layihələr üzərində işləməyi və yeni bacarıqlar əldə etməyi səbirsizliklə gözləyirəm. Əlavə sualınız və ya iş təklifiniz varsa, mənimlə əlaqə saxlayın!",
   fName: "Ad",
   lName: "Soyad",
   eMail: "E-Poçt",
@@ -59,10 +60,12 @@ const translationAz = {
   cv: "CV-ni yüklə",
   hire: "",
   navHome: "Ev",
-  navAbout:"Haqqında",
- navSkills:"Bacarıqlar",
- navProjects:"Proyektlər",
- navContact:"Əlaqə"
+  navAbout: "Haqqında",
+  navSkills: "Bacarıqlar",
+  navProjects: "Proyektlər",
+  navContact: "Əlaqə",
+  footerContent1: "Mən web inkişafına maraq duyan həvəskar bir proqramçıyam. İnsanların həyatına müsbət təsir edə biləcək faydalı və yenilikçi tətbiqlər inşa etməyi sevirəm. ",
+  footerContent2: " Lahiyələrimi keşfetməkdən çəkinməyin və əgər suallarınız varsa və ya maraqlı bir layihədə əməkdaşlıq etmək istəyirsinizsə, mənə müraciət etməkdən çəkinməyin!",
 };
 const translationEn = {
   about: "About",
@@ -91,7 +94,8 @@ const translationEn = {
     "Throughout my career, I have developed a range of essential skills and gained various work experiences. Here is a summary of the knowledge and skills I have acquired during this journey: HTML 5: I have a proficiency level of 100% in HTML 5. I can effectively use HTML 5 in web development processes. CSS 3: My skills in CSS 3 are at 100%. I can create aesthetic and user-friendly interfaces in web design using CSS 3.",
   infoSkills2:
     "JavaScript: I have a proficiency level of 70% in JavaScript. I am experienced in developing interactive web applications with these languages. Node.js: My Node.js skills are at 60%. I can use Node.js in server-side development and application development processes. React & Next.js: My proficiency in React and Next.js is at 75%. I can efficiently use these technologies to create modern web applications.",
-    infoSkills3:"MongoDB & Firebase: My skills in MongoDB and Firebase are at 50%. With my knowledge of database management and cloud-based applications, I can contribute to projects effectively. This is a brief summary of my career and skills. I look forward to working on creative projects and acquiring new skills. If you have any further questions or job offers, please feel free to contact me!",
+  infoSkills3:
+    "MongoDB & Firebase: My skills in MongoDB and Firebase are at 50%. With my knowledge of database management and cloud-based applications, I can contribute to projects effectively. This is a brief summary of my career and skills. I look forward to working on creative projects and acquiring new skills. If you have any further questions or job offers, please feel free to contact me!",
   fName: "First Name",
   lName: "Last Name",
   eMail: "E-Post",
@@ -123,7 +127,11 @@ const translationEn = {
   navAbout: "About",
   navSkills: "Skills",
   navProjects: "Projects",
-  navContact: "Contact"
+  navContact: "Contact",
+  footerContent1:
+    "I am a passionate developer with a keen interest in web development. I love to build useful and innovative applications that can make a positive impact on people's lives.",
+  footerContent2:
+    "Feel free to explore my projects and don't hesitate to reach out to me if you have any questions or would like to collaborate on an exciting project!",
 };
 const translationRu = {
   about: "Об о мне",
@@ -152,7 +160,8 @@ const translationRu = {
     "За время своей карьеры я развил ряд важных навыков и приобрел различный опыт работы. Вот краткое изложение знаний и навыков, которые я приобрел во время этого путешествия: HTML 5: Мой уровень владения HTML 5 составляет 100%. Я могу эффективно использовать HTML 5 в процессах веб-разработки. CSS 3: Мои навыки работы с CSS 3 на 100%. Я могу создавать эстетичные и удобные интерфейсы в веб-дизайне с помощью CSS 3.",
   infoSkills2:
     "JavaScript: Мой уровень владения JavaScript составляет 70%. У меня есть опыт разработки интерактивных веб-приложений на этих языках.Node.js: Мои навыки работы с Node.js находятся на уровне 60%. Я могу использовать Node.js в процессах серверной разработки и разработки приложений. Реагировать иNext.js: Мой уровень владения React и Next.js составляет 75%. Я могу эффективно использовать эти технологии для создания современных веб-приложений.",
-    infoSkills3: "MongoDB и Firebase: мои навыки работы с MongoDB и Firebase находятся на уровне 50%. Благодаря моим знаниям в области управления базами данных и облачных приложений я могу эффективно участвовать в проектах. Это краткий обзор моей карьеры и навыков. Я с нетерпением жду возможности работать над творческими проектами и приобретать новые навыки. Если у вас есть дополнительные вопросы или предложения о работе, пожалуйста, свяжитесь со мной!",
+  infoSkills3:
+    "MongoDB и Firebase: мои навыки работы с MongoDB и Firebase находятся на уровне 50%. Благодаря моим знаниям в области управления базами данных и облачных приложений я могу эффективно участвовать в проектах. Это краткий обзор моей карьеры и навыков. Я с нетерпением жду возможности работать над творческими проектами и приобретать новые навыки. Если у вас есть дополнительные вопросы или предложения о работе, пожалуйста, свяжитесь со мной!",
   fName: "Имя",
   lName: "Фамилия",
   eMail: "Электронная почта",
@@ -181,10 +190,12 @@ const translationRu = {
   cv: "Загрузите резюме",
   hire: "Найми Меня",
   navHome: "Дом",
- navAbout:"Об о мне",
-navSkills:"Навыки",
-navProjects:"Проекты",
-navContact:"Связь"
+  navAbout: "Об о мне",
+  navSkills: "Навыки",
+  navProjects: "Проекты",
+  navContact: "Связь",
+  footerContent1: "Не стесняйтесь изучать мои проекты и не стесняйтесь обращаться ко мне, если у вас есть вопросы или если вы хотите сотрудничать над интересным проектом!",
+  footerContent2: "Я страстный разработчик с большим интересом к веб-разработке. Мне нравится создавать полезные и инновационные приложения, которые могут оказать положительное влияние на жизнь людей.",
 };
 
 i18n.use(initReactI18next).init({
@@ -200,69 +211,70 @@ i18n.use(initReactI18next).init({
   },
 });
 
-const Language = ({setSiteLang}) => {
+const Language = ({ setSiteLang }) => {
+  const [selectedLang, setSelectedLang] = React.useState("az");
 
-    const [selectedLang, setSelectedLang] = React.useState('az');
+  const onClick = (e) => {
+    e.preventDefault();
+    const selectedValue = e.target.value;
+    i18n.changeLanguage(selectedValue);
+    setSelectedLang(selectedValue);
+  };
 
-    const onClick = (e) => {
-        e.preventDefault();
-        const selectedValue = e.target.value;
-        i18n.changeLanguage(selectedValue);
-        setSelectedLang(selectedValue);
-    };
+  let languageName;
+  if (selectedLang === "az") {
+    languageName = "AZE";
+  } else if (selectedLang === "en") {
+    languageName = "ENG";
+  } else if (selectedLang === "ru") {
+    languageName = "RUS";
+  }
 
-    let languageName;
-    if (selectedLang === 'az') {
-        languageName = 'AZE';
-    } else if (selectedLang === 'en') {
-        languageName = 'ENG';
-    } else if (selectedLang === 'ru') {
-        languageName = 'RUS';
-    }
-
-    return (
-        <Suspense fallback="Loading...">
-            <form className="flex items-center justify-center gap-7 rounded-xl backdrop-blur-md border border-[rgba(255,255,255,0.3)] p-3">
-                <button
-                
-                    onClick={onClick}
-                    className="text-white group hover:text-primary relative"
-                    type="submit"
-                    value="az"
-                >
-                    {selectedLang === 'az' && (
-                        <span className="rounded-full p-1 border  border-primary">{languageName}</span>
-                    )}
-                    {selectedLang !== 'az' && 'AZE'}
-                </button>
-                <button
-                    onClick={onClick}
-                    className="text-white group hover:text-primary relative"
-                    type="submit"
-                    value="en"
-                >
-
-                    {selectedLang === 'en' && (
-                        <span className="rounded-full p-1 border border-primary">{languageName}</span>
-                    )}
-                    {selectedLang !== 'en' && 'ENG'}
-                </button>
-                <button
-                    onClick={onClick}
-                    className="text-white group hover:text-primary relative"
-                    type="submit"
-                    value="ru"
-                >
-                    {selectedLang === 'ru' && (
-                        <span className="rounded-full p-1 border  border-primary">{languageName}</span>
-                    )}
-                    {selectedLang !== 'ru' && 'RUS'}
-                </button>
-            </form>
-        </Suspense>
-    );
+  return (
+    <Suspense fallback="Loading...">
+      <form className="flex items-center justify-center gap-7 rounded-xl backdrop-blur-md border border-[rgba(255,255,255,0.3)] p-3">
+        <button
+          onClick={onClick}
+          className="text-white group hover:text-primary relative"
+          type="submit"
+          value="az"
+        >
+          {selectedLang === "az" && (
+            <span className="rounded-full p-1 border  border-primary">
+              {languageName}
+            </span>
+          )}
+          {selectedLang !== "az" && "AZE"}
+        </button>
+        <button
+          onClick={onClick}
+          className="text-white group hover:text-primary relative"
+          type="submit"
+          value="en"
+        >
+          {selectedLang === "en" && (
+            <span className="rounded-full p-1 border border-primary">
+              {languageName}
+            </span>
+          )}
+          {selectedLang !== "en" && "ENG"}
+        </button>
+        <button
+          onClick={onClick}
+          className="text-white group hover:text-primary relative"
+          type="submit"
+          value="ru"
+        >
+          {selectedLang === "ru" && (
+            <span className="rounded-full p-1 border  border-primary">
+              {languageName}
+            </span>
+          )}
+          {selectedLang !== "ru" && "RUS"}
+        </button>
+      </form>
+    </Suspense>
+  );
 };
 
-  
-  
-  export default Language;
+export default Language;

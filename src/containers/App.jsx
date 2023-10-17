@@ -13,7 +13,6 @@ import { HomeSocialLinks } from "../components";
 import { Socials } from "../utils/helper";
 import { useTranslation } from "react-i18next";
 
-
 const App = () => {
   const { t } = useTranslation();
 
@@ -40,23 +39,26 @@ const App = () => {
         data-aos="zoom-in-down"
         data-aos-easing=" ease-out-cubic"
         data-aos-duration="500"
-      > <About /></div>
-     
+      >
+        {" "}
+        <About />
+      </div>
+
       {/* skills container */}
       <div
-           data-aos="zoom-in"
-           data-aos-easing=" ease-out-cubic"
-           data-aos-duration="700">
-
-      <Skills />
+        data-aos="zoom-in"
+        data-aos-easing=" ease-out-cubic"
+        data-aos-duration="700"
+      >
+        <Skills />
       </div>
       {/* projexts container */}
       <div
-           data-aos="fade-up"
-           data-aos-easing=" ease-out-cubic"
-           data-aos-duration="500">
-
-      <Projects />
+        data-aos="fade-up"
+        data-aos-easing=" ease-out-cubic"
+        data-aos-duration="500"
+      >
+        <Projects />
       </div>
       {/* contact container */}
       <div
@@ -88,16 +90,10 @@ const App = () => {
 
         <div className="w-full grid grid-cols-1 lg:grid-cols-3 mt-12">
           <p className="text-texlight text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-            cumque itaque sapiente. Adipisci voluptates magni, doloremque,
-            tenetur quisquam dolorem, fugiat maxime deserunt perspiciatis ipsa
-            consequuntur quia non quam nobis? Laborum!
+         {t('footerContent1')}
           </p>
           <p className="text-texlight text-center">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
-            cumque itaque sapiente. Adipisci voluptates magni, doloremque,
-            tenetur quisquam dolorem, fugiat maxime deserunt perspiciatis ipsa
-            consequuntur quia non quam nobis? Laborum!
+          {t('footerContent2')}
           </p>
 
           <div className="w-full flex flex-col items-center justify-center gap-3">
