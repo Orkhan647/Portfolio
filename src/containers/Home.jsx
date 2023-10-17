@@ -42,7 +42,7 @@ const Home = ({setSiteLang}) => {
             {t('info1')}
           </p>
           {/* social media links */}
-          <div className="flex items-center justify-center gap-16 mt-16">
+          <div className="flex items-center justify-center gap-10 mt-16">
             <AnimatePresence>
               {Socials &&
                 Socials.map((item, index) => (
@@ -54,6 +54,7 @@ const Home = ({setSiteLang}) => {
           {/* hire me */}
           <a
             href="https://github.com/Orkhan647/Portfolio/blob/main/src/assets/cv/Orxans%20Cv.pdf"
+            target='_blank'
             style={{ boxShadow: 'inset 0px 0px 10px rgba(255,255,255,0.3)' }}
             className="mt-12 border border-[rgba(255,255,255,0.3)] rounded-xl px-8 py-3 active:95 group hover:border-primary"
           >

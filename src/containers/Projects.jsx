@@ -60,7 +60,7 @@ const ProjectCard = ({ project }) => {
       {isHovered && (
         <motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0,0,0,0.6)] flex items-center justify-center flex-col gap-2">
           <p className="text-xl text-primary">{project?.name}</p>
-          <a href={project?.gitURL} className="">
+          <a href={project?.gitURL} target="_blank" className="">
             <FaGithub className="text-3xl text-white hover:text-primary" />
           </a>
         </motion.div>

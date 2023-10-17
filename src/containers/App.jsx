@@ -27,7 +27,7 @@ const App = () => {
       {/* Services count cards */}
       <div
         className="w-full"
-        data-aos="fade-left"
+        data-aos="fade-up"
         data-aos-easing=" ease-out-cubic"
         data-aos-duration="500"
       >
@@ -98,12 +98,12 @@ const App = () => {
 
           <div className="w-full flex flex-col items-center justify-center gap-3">
             <p className="text-texlight text-center">
-              <a href="mailto:orxank0434@gmail.com">orxank0434@gmail.com</a>
+              <a href="mailto:orxank0434@gmail.com" target="_blank">orxank0434@gmail.com</a>
             </p>
             <p className="text-texlight text-center">
-              <a href="tel:+994552780434">+994 55 278 04 34</a>
+              <a href="tel:+994552780434" target="_blank">+994 55 278 04 34</a>
             </p>
-            <a href="tel:+994552780434">
+            <a href="tel:+994552780434" target="_blank">
               <p className="text-primary text-center">Hire Me</p>
             </a>
           </div>

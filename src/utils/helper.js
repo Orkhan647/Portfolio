@@ -24,25 +24,30 @@ export const Socials = [
     Icon: FaFacebookF,
     uri: "https://www.facebook.com/okuw99/",
     color: "#1877F2",
-  },
-  {
+    target: "_blank"
+},
+{
     id: `linkedin-${Date.now()}`,
     Icon: FaLinkedinIn,
     uri: "https://www.linkedin.com/in/orkhan-karimov-bb676226b/",
     color: "#0072b1",
-  },
-  {
+    target: "_blank"
+},
+{
     id: `github-${Date.now()}`,
     Icon: FaGithub,
     uri: "https://github.com/Orkhan647",
     color: "#fff",
-  },
-  {
+    target: "_blank"
+},
+{
     id: `instagram-${Date.now()}`,
     Icon: FaInstagram,
     uri: "https://www.instagram.com/orxan_keriimov/",
     color: "#ff0000",
-  },
+    target: "_blank"
+}
+ 
 ];
 
 export const Menus = [
@@ -85,29 +90,34 @@ export const ProjectsData = [
     name: "Transit Flow",
     imgSrc: RestaurantClone,
     gitURL: "https://loges.netlify.app",
+    target: "_blank"
   },
   {
     id: `codepen-${Date.now()}`,
     name: "Nexcent",
     imgSrc: CodePenClone,
     gitURL: "https://github.com/Orkhan647/Nextcent-site",
+    target: "_blank"
   },
   {
     id: `openai-${Date.now()}`,
     name: "Movie App (with next.js)",
     imgSrc: OpenAI,
     gitURL: "https://github.com/Orkhan647/MovieApp",
+    target: "_blank"
   },
   {
     id: `chatapp-${Date.now()}`,
     name: "Portfolio",
     imgSrc: ChatApp,
     gitURL: "https://github.com/Orkhan647/Portfolio",
+    target: "_blank"
   },
   {
     id: `imageSharing-${Date.now()}`,
     name: "MegaTechnique (html-css)",
     imgSrc: ImageSharing,
     gitURL: "https://github.com/Vetrivel-VP",
+     target: "_blank"
   },
 ];
