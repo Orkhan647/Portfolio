@@ -116,7 +116,7 @@ export const ProjectsData = [
   },
   {
     id: `imageSharing-${Date.now()}`,
-    name: "MegaTechnique (html-css)",
+    name: "MegaTechnique",
     imgSrc: ImageSharing,
     gitURL: "https://megatexnika-vite.netlify.app/",
      target: "_blank"
