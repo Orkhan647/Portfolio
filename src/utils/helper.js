@@ -17,6 +17,7 @@ import {
   OpenAI,
   RestaurantClone,
 } from "../assets";
+import carLand from '../assets/img/Project/thumb_carland_app.png'
 
 export const Socials = [
   {
@@ -117,7 +118,14 @@ export const ProjectsData = [
     id: `imageSharing-${Date.now()}`,
     name: "MegaTechnique (html-css)",
     imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
+    gitURL: "https://megatexnika-vite.netlify.app/",
+     target: "_blank"
+  },
+  {
+    id: `carLand-${Date.now()}`,
+    name: "Carland Rent A Car",
+    imgSrc: carLand,
+    gitURL: "https://rent-carland.vercel.app/",
      target: "_blank"
   },
 ];
